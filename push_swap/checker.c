@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checker.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 17:43:53 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/12 21:09:47 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/15 08:43:05 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,10 @@ int	duplicate(t_list **stack)
 		slow = slow->next;
 	}
 	return (0);
+}
+
+void	sort2(t_list **stacka)
+{
+	if ((*stacka)->content > (*stacka)->next->content)
+		sa(*stacka);
 }

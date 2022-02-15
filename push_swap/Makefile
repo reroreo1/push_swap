@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+         #
+#    By: mac <mac@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/09 20:25:27 by rezzahra          #+#    #+#              #
-#    Updated: 2022/02/12 04:45:07 by rezzahra         ###   ########.fr        #
+#    Updated: 2022/02/15 09:08:20 by mac              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,8 +26,6 @@ BSRCS			=	bonus/ft_atoi.c  bonus/get_next_line_utils.c bonus/swapa.c bonus/ft_ls
 					bonus/ft_lstnew_bonus.c bonus/pushb.c bonus/rotatera.c\
 					bonus/get_next_line.c
 					 
-INCLUDES		= /bonus/push_swap_bonus.h
-
 BOBJS			= $(BSRCS:.c=.o)
 
 FLAGS			= -Wall -Wextra -Werror

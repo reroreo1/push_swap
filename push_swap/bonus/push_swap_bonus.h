@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_bonus.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 15:56:59 by mac               #+#    #+#             */
-/*   Updated: 2022/02/12 02:51:57 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/15 09:02:51 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,6 @@ char	*get_next_line(int fd);
 char	*get_line(char **s, char *temp, char *line);
 int		ft_strcmp(char *set1, char *set2);
 void	eror(void);
+void	parcing(t_list **stacka, int ac, char **av);
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checkerb.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 20:45:31 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/12 04:32:07 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/15 09:11:42 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,10 @@ int	duplicate(t_list **stack)
 		while (fast)
 		{
 			if (slow->content == fast->content)
+			{	
+				write(1, "error\n", 6);
 				return (1);
+			}
 			fast = fast->next;
 		}
 		slow = slow->next;
@@ -94,22 +97,19 @@ void	execute_cmd(t_list **stacka, t_list **stackb, char *line)
 
 int	main(int ac, char **av)
 {
-	int		i;
 	t_list	*stacka;
 	t_list	*stackb;
 	char	*line;
 
-	i = 1;
 	stacka = NULL;
 	stackb = NULL;
-	while (i < ac)
-		ft_lstadd_back(&stacka, ft_lstnew(ft_atoi(av[i++]), 0));
+	parcing(&stacka, ac, av);
 	if (issorted(&stacka) == 1 || duplicate(&stacka))
 		return (0);
 	line = get_next_line(0);
 	while (line)
 	{	
-		execute_cmd(&stacka, &stacka, line);
+		execute_cmd(&stacka, &stackb, line);
 		free(line);
 		line = get_next_line(0);
 	}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:44:26 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/12 02:18:57 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/15 09:07:32 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,19 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (nbr * sign);
+}
+
+void	parcing(t_list **stacka, int ac, char **av)
+{
+	int		i;
+	long	nb;
+
+	i = 1;
+	while (i < ac)
+	{
+		nb = ft_atoi(av[i++]);
+		if (!(nb <= 2147483647 && nb >= -2147483648))
+			eror();
+		ft_lstadd_back(stacka, ft_lstnew(nb, 0));
+	}
 }

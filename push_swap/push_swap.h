@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 15:56:59 by mac               #+#    #+#             */
-/*   Updated: 2022/02/12 21:14:58 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/15 08:43:30 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,6 @@ void	eror(void);
 void	verybigsort(t_list **stacka, t_list **stackb, int ac, int *arr);
 void	smallsort(t_list **stacka, t_list **stackb, int ac, int *arr);
 void	randomsort(t_list **stacka, t_list **stackb, int ac, int *arr);
+void	sort2(t_list **stacka);
 
 #endif

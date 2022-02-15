@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 23:00:59 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/12 21:46:28 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/15 09:10:02 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	randomsort(t_list **stacka, t_list **stackb, int ac, int *arr)
 
 void	smallsort(t_list **stacka, t_list **stackb, int ac, int *arr)
 {
+	if (ac == 2)
+		sort2(stacka);
 	if (ac == 3)
 		sort3(stacka);
 	else if (ac == 4)

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mac <mac@student.42.fr>                    +#+  +:+       +#+         #
+#    By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/09 20:25:27 by rezzahra          #+#    #+#              #
-#    Updated: 2022/02/15 09:08:20 by mac              ###   ########.fr        #
+#    Updated: 2022/02/15 13:09:28 by rezzahra         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,4 +51,4 @@ clean:
 fclean:			clean
 				rm -f $(NAME) $(BNAME)
 
-re:				fclean $(NAME) $(BNAME)
+re:				fclean $(NAME)

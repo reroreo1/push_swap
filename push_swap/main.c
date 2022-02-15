@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 23:00:59 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/15 09:10:02 by mac              ###   ########.fr       */
+/*   Updated: 2022/02/15 13:17:00 by rezzahra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	main(int ac, char **av)
 			eror();
 		ft_lstadd_back(&stacka, ft_lstnew(nb, 0));
 	}
-	if (issorted(&stacka) == 1 || duplicate(&stacka))
+	if (duplicate(&stacka) || issorted(&stacka) == 1)
 		return (0);
 	randomsort(&stacka, &stackb, ac - 1, arr);
 }

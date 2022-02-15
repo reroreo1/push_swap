@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_bonus.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 15:56:59 by mac               #+#    #+#             */
-/*   Updated: 2022/02/15 09:02:51 by mac              ###   ########.fr       */
+/*   Updated: 2022/02/15 10:18:34 by rezzahra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_lstadd_front(t_list	**lst, t_list *first);
 t_list	*ft_lstlast(t_list *lst);
 int		ft_lstsize(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
-int		ft_atoi(const char *str);
+long	ft_atoi(const char *str);
 void	swapa(t_list *stack);
 void	pusha(t_list **stacka, t_list **stackb);
 void	rotatea(t_list **stack);

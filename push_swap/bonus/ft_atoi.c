@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:44:26 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/15 09:07:32 by mac              ###   ########.fr       */
+/*   Updated: 2022/02/15 10:17:54 by rezzahra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	eror(void)
 	exit(0);
 }
 
-int	ft_atoi(const char *str)
+long	ft_atoi(const char *str)
 {
-	int	i;
-	int	nbr;
-	int	sign;
+	int		i;
+	long	nbr;
+	long	sign;
 
 	i = 0;
 	nbr = 0;

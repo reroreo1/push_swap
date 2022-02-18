@@ -6,7 +6,7 @@
 /*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:44:26 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/15 13:34:55 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/18 07:02:54 by rezzahra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,6 @@ void	eror(void)
 {
 	write(1, "error\n", 6);
 	exit(0);
-}
-
-int	ft_isdigit(char *c)
-{
-	int	i;
-
-	i = 0;
-	while(c[i++])
-	{
-		if (!(c[i] >= 48 && c[i] <= 57))
-			return (0);
-	}
-	return (1);
 }
 
 long	ft_atoi(const char *str)
@@ -54,5 +41,7 @@ long	ft_atoi(const char *str)
 		nbr = nbr * 10 + (str[i] - 48);
 		i++;
 	}
+	if (!(str[i] >= '0' && str[i] <= '9') && str[i])
+		eror();
 	return (nbr * sign);
 }

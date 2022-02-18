@@ -6,7 +6,7 @@
 /*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 17:45:52 by mac               #+#    #+#             */
-/*   Updated: 2022/02/15 13:28:24 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/18 06:57:53 by rezzahra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	rotaterb(t_list **stack)
 	int		index;
 	int		size;
 
-	if(!(*stack))
+	if (!(*stack))
 		return ;
 	num = 0;
 	index = 0;

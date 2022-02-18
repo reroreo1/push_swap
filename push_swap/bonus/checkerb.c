@@ -6,7 +6,7 @@
 /*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 20:45:31 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/15 13:27:12 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/18 07:08:32 by rezzahra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ int	main(int ac, char **av)
 		free(line);
 		line = get_next_line(0);
 	}
-	if (issorted(&stacka) == 1)
+	if (issorted(&stacka) == 1 && stackb == NULL)
 		write(1, "OK\n", 3);
 	else
 		write(1, "KO\n", 3);

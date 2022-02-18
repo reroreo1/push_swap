@@ -6,7 +6,7 @@
 /*   By: rezzahra <rezzahra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:44:26 by rezzahra          #+#    #+#             */
-/*   Updated: 2022/02/15 10:17:54 by rezzahra         ###   ########.fr       */
+/*   Updated: 2022/02/18 07:04:33 by rezzahra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ long	ft_atoi(const char *str)
 		nbr = nbr * 10 + (str[i] - 48);
 		i++;
 	}
+	if (!(str[i] >= '0' && str[i] <= '9') && str[i])
+		eror();
 	return (nbr * sign);
 }
 
